@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lehrer-iPad Umzug – Schritt für Schritt</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="mode-guided">
+  <div class="bg"></div>
+  <main class="container">
+    <header class="hero">
+      <div>
+        <img src="assets/logo.png" alt="KRS Schullogo" class="logo" />
+        <p class="eyebrow">Realschule Schriesheim – Hopp-Foundation</p>
+        <h1>Lehrer-iPad übertragen – sicher und einfach</h1>
+        <p class="lead">Diese Anleitung begleitet dich Schritt für Schritt von der Sicherung bis zur Abgabe des alten iPads. Auch ohne Vorkenntnisse. Für Schnellklicker gibt es eine Kurzansicht.</p>
+        <div class="hero-notes">
+          <div class="note">Neue iPads dank Hopp-Foundation: bessere Hülle, neuer Stift, Laden via USB‑C.</div>
+          <div class="note">Alte Lehrer‑iPads werden zu Schüler‑iPads, damit Lehrkräfte maximale Batterie &amp; Leistung haben.</div>
+          <div class="note">iPads ab der Zählung L_32 werden mit der nächsten Förderung getauscht. Nummerierung bleibt vorerst: L012 (alt) → L012 (neu).</div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-title">Los geht's</div>
+        <div class="mode-switch">
+          <button class="btn primary" data-mode="guided">Schritt für Schritt</button>
+          <button class="btn ghost" data-mode="quick">Kurz &amp; kompakt</button>
+        </div>
+        <div class="small">Du kannst jederzeit umschalten.</div>
+        <div class="divider"></div>
+        <div class="mini-check">
+          <div class="mini-title">Vorbereitung (kurz)</div>
+          <div class="mini-item">WLAN bereit, iPad geladen, Apple‑ID Passwort parat.</div>
+        </div>
+        <div class="divider"></div>
+        <div class="small">Fragen? Bitte bei <strong>Norbert</strong> oder <strong>Steffen</strong> melden.</div>
+      </div>
+    </header>
+
+    <section class="progress">
+      <div class="progress-label">Fortschritt</div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-text" id="progressText">Schritt 1 von 9</div>
+    </section>
+
+    <section class="steps" id="steps">
+
+      <!-- ===== SCHRITT 1: Start & Vorbereitung ===== -->
+      <article class="step is-current" data-step="0" id="step-0">
+        <div class="step-header">
+          <div class="step-num">1</div>
+          <div>
+            <h2>Start &amp; Vorbereitung</h2>
+            <p class="quick">Am besten zu Hause machen. WLAN, Ladung, Apple‑ID Passwort parat.</p>
+          </div>
+        </div>
+        <div class="detail">
+          <p>Nimm dir in Ruhe Zeit – am besten zu Hause mit stabilem WLAN.</p>
+          <div class="checklist">
+            <label><input type="checkbox" /> Ich habe ca. 30–60 Minuten Zeit.</label>
+            <label><input type="checkbox" /> Altes iPad ist mindestens 50&nbsp;% geladen.</label>
+            <label><input type="checkbox" /> WLAN‑Passwort ist verfügbar.</label>
+            <label><input type="checkbox" /> Apple‑ID Passwort ist bekannt.</label>
+            <label><input type="checkbox" /> iCloud‑Fotos und iCloud Drive sind aktiviert (siehe unten).</label>
+          </div>
+
+          <div class="info-box">
+            <strong>iCloud‑Synchronisierung prüfen:</strong><br>
+            <span class="path">Einstellungen → [Dein Name] → iCloud → Alle anzeigen</span><br>
+            Überprüfe, ob folgende Bereiche eingeschaltet sind:
+            <strong>Notizen, iCloud Drive, iCloud Fotos, Passwörter, Kalender</strong> und alles Weitere, was du sichern möchtest.
+          </div>
+
+          <div class="info-box">
+            <strong>Geschäftliche Apple‑ID anlegen (empfohlen):</strong><br>
+            Am besten einen eigenen „geschäftlichen" iCloud‑Account mit deiner <strong>@realschule-schriesheim.de</strong> Adresse anlegen. So trennst du private Daten sauber von den schulischen – besonders wichtig bei Fotos.
+          </div>
+
+          <div class="warning">
+            <strong>Private Apple‑ID im Einsatz?</strong><br>
+            Wer sich mit der privaten Apple‑ID angemeldet hat, muss die schulischen Daten einzeln händisch sichern und auf eine geschäftliche Apple‑ID übertragen.
+          </div>
+
+          <div class="warning">
+            <strong>Kein iCloud‑Backup gewünscht?</strong><br>
+            Wer nicht über iCloud sichern möchte, kann das über eine lokale Sicherung am PC machen (iTunes/Finder). Dafür gibt es Tutorials auf YouTube.
+          </div>
+
+          <div class="tip">Tipp: Wenn du unsicher bist, frag kurz bei Norbert oder Steffen nach, bevor du etwas löschst.</div>
+        </div>
+        <div class="step-nav">
+          <button class="btn primary" data-next>Weiter</button>
+        </div>
+      </article>
+
+      <!-- ===== SCHRITT 2: iCloud-Backup ===== -->
+      <article class="step" data-step="1" id="step-1">
+        <div class="step-header">
+          <div class="step-num">2</div>
+          <div>
+            <h2>iCloud‑Backup prüfen &amp; aktualisieren</h2>
+            <p class="quick"><span class="path">Einstellungen → [Dein Name] → iCloud → iCloud‑Backup → „Backup jetzt erstellen"</span></p>
+          </div>
+        </div>
+        <div class="detail">
+          <p>Stelle sicher, dass dein Backup aktuell ist, bevor du weitermachst.</p>
+          <div class="checklist">
+            <label><input type="checkbox" /> Altes iPad ist mit WLAN verbunden.</label>
+            <label><input type="checkbox" /> Stromkabel angeschlossen (wichtig!).</label>
+            <label><input type="checkbox" /> Letztes Backup ist von heute (oder ganz aktuell).</label>
+          </div>
+          <div class="info-box">
+            <strong>So geht's:</strong><br>
+            <span class="path">Einstellungen → [Dein Name] → iCloud → iCloud‑Backup</span><br>
+            Tippe auf <strong>„Backup jetzt erstellen"</strong> und warte, bis es fertig ist.
+          </div>
+          <div class="tip">Das erste Backup kann sehr lange dauern (je nach Datenmenge 15–60 Minuten). Geduld!</div>
+        </div>
+        <div class="step-nav">
+          <button class="btn ghost" data-prev>Zurück</button>
+          <button class="btn primary" data-next>Weiter</button>
+        </div>
+      </article>
+
+      <!-- ===== SCHRITT 3: Daten sichern ===== -->
+      <article class="step" data-step="2" id="step-2">
+        <div class="step-header">
+          <div class="step-num">3</div>
+          <div>
+            <h2>Daten sichern, die nicht in iCloud sind</h2>
+            <p class="quick">Dateien von „Auf meinem iPad" in iCloud Drive verschieben. IServ als Alternative.</p>
+          </div>
+        </div>
+        <div class="detail">
+          <p>Manche Dateien liegen nur lokal auf dem iPad und werden <strong>nicht</strong> automatisch gesichert. Diese musst du manuell verschieben.</p>
+
+          <div class="info-box">
+            <strong>Dateien von „Auf meinem iPad" sichern (Dateien‑App):</strong>
+          </div>
+          <ol class="sub-steps">
+            <li><strong>Dateien‑App</strong> öffnen.</li>
+            <li>Bereich <strong>„Auf meinem iPad"</strong> öffnen.</li>
+            <li>Oben rechts auf <strong>„Auswählen"</strong> tippen.</li>
+            <li><strong>„Alles auswählen"</strong> tippen.</li>
+            <li>Auf das <strong>grau gefärbte Feld</strong> tippen und kurz warten, bis sich die Ordner zusammenziehen.</li>
+            <li>Die Auswahl auf <strong>„iCloud Drive"</strong> ziehen. Warten, bis die Synchronisierung abgeschlossen ist (der kleine Kreis daneben verschwindet).</li>
+          </ol>
+
+          <div class="checklist">
+            <label><input type="checkbox" /> Dateien‑App: Bereich „Auf meinem iPad" kontrolliert.</label>
+            <label><input type="checkbox" /> Ordner „Downloads" gesichert (ist oft unter „Auf meinem iPad").</label>
+            <label><input type="checkbox" /> iCloud Drive vollständig synchronisiert (Kreis verschwunden).</label>
+          </div>
+
+          <div class="info-box">
+            <strong>Alternative: IServ als Speicherort</strong><br>
+            In der IServ‑App einloggen → dann erscheint <strong>„IServ"</strong> als Ordner in der Dateien‑App. Dort können die Dateien von „Auf meinem iPad" hingezogen werden. Auch OneDrive-Dateien können nach <strong>IServ → Files</strong> verschoben werden.
+          </div>
+
+          <div class="warning">
+            <strong>IServ-Einschränkung:</strong> Die IServ‑App funktioniert auf dem iPad derzeit nur im <strong>häuslichen WLAN</strong>. In der Schule ist sie gesperrt (bekannter Fehler, seit gut 2 Monaten gemeldet).
+          </div>
+
+          <div class="warning">
+            <strong>OneDrive-Hinweis:</strong> OneDrive‑Dateien verlieren beim Verschieben nach IServ ihren „geteilt"‑Status (z.&nbsp;B. Team- oder gemeinsame Dateien).
+          </div>
+
+          <div class="tip">Nach dem Verschieben am besten noch einmal ein Backup erstellen (Schritt 2 wiederholen).</div>
+        </div>
+        <div class="step-nav">
+          <button class="btn ghost" data-prev>Zurück</button>
+          <button class="btn primary" data-next>Weiter</button>
+        </div>
+      </article>
+
+      <!-- ===== SCHRITT 4: Neues iPad einrichten ===== -->
+      <article class="step" data-step="3" id="step-3">
+        <div class="step-header">
+          <div class="step-num">4</div>
+          <div>
+            <h2>Neues iPad einrichten</h2>
+            <p class="quick">Neues iPad einschalten → WLAN → Altes iPad danebenlegen → Schnellstart folgen.</p>
+          </div>
+        </div>
+        <div class="detail">
+          <p>Das neue iPad ist bereits vorkonfiguriert (Jamf MDM). Du musst es nur noch mit deinen Daten verknüpfen.</p>
+
+          <ol class="sub-steps">
+            <li><strong>Neues iPad einschalten</strong> und WLAN‑Passwort von zu Hause eingeben.</li>
+            <li><span class="path">Einstellungen → Allgemein → Gerät übertragen/zurücksetzen → Auf neues iPad vorbereiten</span></li>
+            <li><strong>Altes iPad in die Nähe halten</strong> und den Schritten auf dem Bildschirm folgen. iCloud synchronisiert automatisch.</li>
+            <li>Anmeldung mit <strong>schulischer Apple‑ID</strong> bestätigen (altes iPad in der Nähe lassen für 2‑Faktor‑Bestätigung).</li>
+            <li>Warten, bis die <strong>iCloud‑Daten vollständig übertragen</strong> sind (WLAN anlassen!).</li>
+            <li><strong>Fehlende Apps nachinstallieren</strong>, die nicht vorinstalliert sind – über den App Store.</li>
+          </ol>
+
+          <div class="checklist">
+            <label><input type="checkbox" /> Neues iPad mit WLAN verbunden (zu Hause).</label>
+            <label><input type="checkbox" /> Altes iPad liegt daneben (für Schnellstart).</label>
+            <label><input type="checkbox" /> Mit schulischer Apple‑ID angemeldet.</label>
+            <label><input type="checkbox" /> iCloud‑Daten vollständig übertragen.</label>
+            <label><input type="checkbox" /> Fehlende Apps aus dem App Store nachinstalliert.</label>
+          </div>
+
+          <div class="tip">Wenn Schnellstart nicht klappt: Wähle „Aus iCloud‑Backup wiederherstellen".</div>
+        </div>
+        <div class="step-nav">
+          <button class="btn ghost" data-prev>Zurück</button>
+          <button class="btn primary" data-next>Weiter</button>
+        </div>
+      </article>
+
+      <!-- ===== SCHRITT 5: Kontrolle ===== -->
+      <article class="step" data-step="4" id="step-4">
+        <div class="step-header">
+          <div class="step-num">5</div>
+          <div>
+            <h2>Kontrolle nach der Übertragung</h2>
+            <p class="quick">Apps öffnen, Dateien prüfen, überall neu anmelden.</p>
+          </div>
+        </div>
+        <div class="detail">
+          <p>Prüfe, ob alles korrekt übertragen wurde, bevor du das alte iPad löschst.</p>
+          <div class="checklist">
+            <label><input type="checkbox" /> iCloud Drive sichtbar und aktuell.</label>
+            <label><input type="checkbox" /> Wichtige Apps starten (z.&nbsp;B. Outlook, Teams, OneNote).</label>
+            <label><input type="checkbox" /> Wichtige Dokumente vorhanden (Fotos, Dateien‑App checken).</label>
+            <label><input type="checkbox" /> WLAN verbindet zuverlässig.</label>
+            <label><input type="checkbox" /> Fehlende Apps im App Store geladen.</label>
+            <label><input type="checkbox" /> In allen Apps erneut angemeldet (Office, IServ, Teams etc.).</label>
+          </div>
+
+          <div class="info-box">
+            <strong>Schulbücher:</strong> Deine Schulbücher liegen in der Cloud und können nach der Anmeldung in den entsprechenden Apps wieder heruntergeladen werden.
+          </div>
+
+          <div class="tip">Einige Apps laden Inhalte erst nach dem ersten Öffnen nach. WLAN anlassen und etwas Geduld haben.</div>
+        </div>
+        <div class="step-nav">
+          <button class="btn ghost" data-prev>Zurück</button>
+          <button class="btn primary" data-next>Weiter</button>
+        </div>
+      </article>
+
+      <!-- ===== SCHRITT 6: Apple Pencil ===== -->
+      <article class="step" data-step="5" id="step-5">
+        <div class="step-header">
+          <div class="step-num">6</div>
+          <div>
+            <h2>Apple Pencil aktivieren (USB‑C)</h2>
+            <p class="quick">Pencil kurz per USB‑C anschließen – danach koppelt er automatisch.</p>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="checklist">
+            <label><input type="checkbox" /> USB‑C Kabel eingesteckt (Pencil ↔ iPad).</label>
+            <label><input type="checkbox" /> Hinweis „Koppeln" bestätigt.</label>
+          </div>
+          <div class="tip">Der Pencil muss einmalig per Kabel aktiviert werden. Danach verbindet er sich automatisch.</div>
+        </div>
+        <div class="step-nav">
+          <button class="btn ghost" data-prev>Zurück</button>
+          <button class="btn primary" data-next>Weiter</button>
+        </div>
+      </article>
+
+      <!-- ===== SCHRITT 7: Hülle ===== -->
+      <article class="step" data-step="6" id="step-6">
+        <div class="step-header">
+          <div class="step-num">7</div>
+          <div>
+            <h2>Hülle anbringen (Logitech Rugged Combo)</h2>
+            <p class="quick">iPad vorsichtig einklipsen. Tastatur über Bluetooth verbinden.</p>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="checklist">
+            <label><input type="checkbox" /> iPad zuerst unten einlegen.</label>
+            <label><input type="checkbox" /> Oben vorsichtig einklipsen.</label>
+            <label><input type="checkbox" /> Scharnier prüfen, Tastatur sitzt.</label>
+            <label><input type="checkbox" /> Tastatur über Bluetooth verbinden.</label>
+          </div>
+          <div class="info-box">
+            <strong>Tastatur koppeln:</strong><br>
+            <span class="path">Einstellungen → Bluetooth</span><br>
+            Tastatur einschalten und in der Liste auswählen, um sie zu verbinden.
+          </div>
+          <div class="tip">Die Hülle sitzt am Anfang stramm. Langsam und gleichmäßig drücken.</div>
+        </div>
+        <div class="step-nav">
+          <button class="btn ghost" data-prev>Zurück</button>
+          <button class="btn primary" data-next>Weiter</button>
+        </div>
+      </article>
+
+      <!-- ===== SCHRITT 8: Altes iPad abmelden ===== -->
+      <article class="step" data-step="7" id="step-7">
+        <div class="step-header">
+          <div class="step-num">8</div>
+          <div>
+            <h2>Altes iPad abmelden &amp; zurücksetzen</h2>
+            <p class="quick">Erst abmelden, dann zurücksetzen. Reihenfolge ist wichtig!</p>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="important">
+            <strong>Wichtig: Reihenfolge beachten!</strong><br>
+            Erst abmelden, <strong>dann</strong> zurücksetzen. Wenn du zuerst zurücksetzt, bleibt die Aktivierungssperre aktiv – und das iPad ist dann gesperrt.
+          </div>
+
+          <div class="important">
+            <strong>Apple‑ID Passwort sicherstellen!</strong><br>
+            Stelle sicher, dass du dein Apple‑ID Passwort kennst, bevor du das alte iPad löschst. Falls nötig, vorher zurücksetzen.
+          </div>
+
+          <ol class="sub-steps">
+            <li><span class="path">Einstellungen → [Dein Name] → Abmelden</span> – Von der Apple‑ID abmelden.</li>
+            <li><strong>„Wo ist?"</strong> wird dabei deaktiviert (Aktivierungssperre wird aufgehoben).</li>
+            <li><span class="path">Einstellungen → Allgemein → iPad übertragen/zurücksetzen → Alle Inhalte &amp; Einstellungen löschen</span></li>
+          </ol>
+
+          <div class="checklist">
+            <label><input type="checkbox" /> Von Apple‑ID abgemeldet.</label>
+            <label><input type="checkbox" /> „Wo ist?" deaktiviert (Aktivierungssperre aus).</label>
+            <label><input type="checkbox" /> Alle Inhalte &amp; Einstellungen gelöscht.</label>
+          </div>
+
+          <div class="tip">Nach dem Zurücksetzen startet das iPad neu und zeigt den „Hallo"-Bildschirm.</div>
+        </div>
+        <div class="step-nav">
+          <button class="btn ghost" data-prev>Zurück</button>
+          <button class="btn primary" data-next>Weiter</button>
+        </div>
+      </article>
+
+      <!-- ===== SCHRITT 9: Übergabezustand ===== -->
+      <article class="step" data-step="8" id="step-8">
+        <div class="step-header">
+          <div class="step-num">9</div>
+          <div>
+            <h2>Übergabezustand (MUSS)</h2>
+            <p class="quick">iPad zeigt „Hallo", kein Konto angemeldet, sauber &amp; bereit.</p>
+          </div>
+        </div>
+        <div class="detail">
+          <p>Bevor du das alte iPad abgibst, prüfe diese Punkte:</p>
+          <div class="checklist">
+            <label><input type="checkbox" /> „Hallo"-Startbildschirm sichtbar.</label>
+            <label><input type="checkbox" /> Keine Apple‑ID mehr verknüpft.</label>
+            <label><input type="checkbox" /> Keine persönlichen Daten mehr auf dem Gerät.</label>
+            <label><input type="checkbox" /> iPad gereinigt, Hülle/Schutz in Ordnung.</label>
+            <label><input type="checkbox" /> Ladekabel dabei (nach Vorgabe).</label>
+          </div>
+          <div class="tip">So kann das Gerät direkt als Schüler‑iPad weiterverwendet werden. Geschafft!</div>
+        </div>
+        <div class="step-nav">
+          <button class="btn ghost" data-prev>Zurück</button>
+          <button class="btn primary" data-next>Zur Startseite</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="faq">
+      <h2>Wenn etwas hakt</h2>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h3>Backup zu alt?</h3>
+          <p>WLAN prüfen, ans Stromnetz, „Backup jetzt erstellen". Danach neu versuchen. Das erste Backup dauert sehr lange.</p>
+        </div>
+        <div class="faq-card">
+          <h3>Apps fehlen?</h3>
+          <p>WLAN anlassen, App einmal öffnen. Einige Apps laden Inhalte erst nach dem ersten Start nach.</p>
+        </div>
+        <div class="faq-card">
+          <h3>Passwort vergessen?</h3>
+          <p>Apple‑ID Passwort zurücksetzen, <strong>bevor</strong> du das alte iPad löschst.</p>
+        </div>
+        <div class="faq-card">
+          <h3>IServ geht nicht?</h3>
+          <p>Die IServ‑App funktioniert derzeit nur im häuslichen WLAN. In der Schule ist sie leider gesperrt.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>
+        <img src="assets/logo.png" alt="KRS Logo" class="footer-logo" />
+      </div>
+      <div>Realschule Schriesheim · Stand: Februar 2026</div>
+      <div>Fragen? Bei <strong>Norbert</strong> oder <strong>Steffen</strong> melden.</div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

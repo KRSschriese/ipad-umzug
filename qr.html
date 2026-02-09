@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QR-Code Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="mode-quick">
+  <div class="bg"></div>
+  <main class="container">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">QR-Code</p>
+        <h1>QR‑Code für die iPad‑Anleitung</h1>
+        <p class="lead">Gib die URL der Anleitung ein. Der QR‑Code öffnet die App auf dem iPad.</p>
+        <p class="small">Hinweis: Das Erstellen nutzt einen Online‑Dienst und braucht Internet.</p>
+      </div>
+      <div class="hero-card">
+        <div class="card-title">URL eingeben</div>
+        <label class="small" for="urlInput">Beispiel: http://192.168.x.x:8000</label>
+        <input id="urlInput" type="text" placeholder="URL" style="width:100%; padding:10px; margin:8px 0; border-radius:10px; border:1px solid #ccc;" />
+        <button class="btn primary" id="makeQr">QR erstellen</button>
+        <div class="small" id="status"></div>
+      </div>
+    </header>
+    <section class="steps">
+      <article class="step is-current">
+        <div class="step-header">
+          <div class="step-num">1</div>
+          <div>
+            <h2>Dein QR‑Code</h2>
+            <p class="quick">Scanne ihn mit der Kamera‑App auf dem iPad.</p>
+          </div>
+        </div>
+        <div class="detail" style="display:block;">
+          <div style="display:grid; place-items:center;">
+            <img id="qrImg" alt="QR-Code" style="max-width:280px; width:100%; border:1px solid #ddd; border-radius:12px; background:#fff;" />
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const input = document.getElementById('urlInput');
+    const img = document.getElementById('qrImg');
+    const status = document.getElementById('status');
+    const button = document.getElementById('makeQr');
+
+    function makeQr() {
+      const url = input.value.trim();
+      if (!url) {
+        status.textContent = 'Bitte eine URL eingeben.';
+        return;
+      }
+      const encoded = encodeURIComponent(url);
+      img.src = `https://api.qrserver.com/v1/create-qr-code/?size=320x320&data=${encoded}`;
+      status.textContent = 'QR‑Code erstellt.';
+    }
+
+    button.addEventListener('click', makeQr);
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') makeQr();
+    });
+  </script>
+</body>
+</html>
